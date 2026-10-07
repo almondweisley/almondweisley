@@ -40,6 +40,47 @@ jobs:
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Generate activity graph
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const login = context.repo.owner;
+            const to = new Date();
+            const from = new Date(to.getTime() - 30 * 864e5);
+            const q = `query($login:String!,$from:DateTime!,$to:DateTime!){
+              user(login:$login){ contributionsCollection(from:$from,to:$to){
+                contributionCalendar{ weeks{ contributionDays{ date contributionCount } } } } } }`;
+            const r = await github.graphql(q, { login, from: from.toISOString(), to: to.toISOString() });
+            const days = r.user.contributionsCollection.contributionCalendar.weeks
+              .flatMap(w => w.contributionDays).slice(-31);
+            const W = 1200, H = 420, L = 70, R = 30, T = 70, B = 70;
+            const max = Math.ceil(Math.max(4, ...days.map(d => d.contributionCount)) / 4) * 4;
+            const x = i => L + i * (W - L - R) / (days.length - 1);
+            const y = v => H - B - v * (H - T - B) / max;
+            const pts = days.map((d, i) => [x(i), y(d.contributionCount)]);
+            const line = pts.map(p => p.join(',')).join(' ');
+            const area = `${L},${H - B} ${line} ${x(days.length - 1)},${H - B}`;
+            const grid = [0, 0.25, 0.5, 0.75, 1].map(f => {
+              const v = Math.round(max * f), yy = y(max * f);
+              return `<line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="#ffffff" stroke-opacity="0.08"/>` +
+                `<text x="${L - 12}" y="${yy + 4}" text-anchor="end">${v}</text>`;
+            }).join('');
+            const labels = days.map((d, i) => i % 3 ? '' :
+              `<text x="${x(i)}" y="${H - B + 24}" text-anchor="middle">${+d.date.slice(8)}</text>`).join('');
+            const dots = pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#ffffff"/>`).join('');
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+            <rect width="100%" height="100%" rx="6" fill="#20232a"/>
+            <text x="${W / 2}" y="40" text-anchor="middle" fill="#5bcdec" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="600">${login}'s Contribution Graph</text>
+            <g fill="#8b949e" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12">${grid}${labels}
+            <text x="${W / 2}" y="${H - 18}" text-anchor="middle" font-size="13">Days</text>
+            <text transform="translate(22 ${H / 2}) rotate(-90)" text-anchor="middle" font-size="13">Contributions</text></g>
+            <polygon points="${area}" fill="#5bcdec" fill-opacity="0.15"/>
+            <polyline points="${line}" fill="none" stroke="#5bcdec" stroke-width="3" stroke-linejoin="round"/>${dots}
+            </svg>`;
+            fs.writeFileSync('profile/activity-graph.svg', svg);
+
       - name: Commit and push cards
         run: |
           git config user.name "github-actions[bot]"
