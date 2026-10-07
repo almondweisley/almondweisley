@@ -108,7 +108,7 @@ I build cross-platform apps end to end. Flutter and Dart on the front, Python or
 </tr>
 <tr><td align="center" colspan="4"><b>Storage</b></td></tr>
 <tr>
-<td align="center" width="25%"><img src="https://cdn.simpleicons.org/amazons3/569A31" width="56" height="56" alt="AWS S3"/><br/><sub>AWS S3</sub></td>
+<td align="center" width="25%"><img src="https://api.iconify.design/logos/aws-s3.svg" width="56" height="56" alt="AWS S3"/><br/><sub>AWS S3</sub></td>
 <td align="center" width="25%"><img src="https://cdn.simpleicons.org/cloudinary/3448C5" width="56" height="56" alt="Cloudinary"/><br/><sub>Cloudinary</sub></td>
 <td align="center" width="25%"><img src="https://cdn.simpleicons.org/minio/C72E49" width="56" height="56" alt="MinIO"/><br/><sub>MinIO</sub></td>
 <td width="25%"></td>
@@ -129,8 +129,8 @@ I build cross-platform apps end to end. Flutter and Dart on the front, Python or
 </tr>
 <tr><td align="center" colspan="4"><b>SMS &amp; Email</b></td></tr>
 <tr>
-<td align="center" width="25%"><img src="https://cdn.simpleicons.org/twilio/F22F46" width="56" height="56" alt="Twilio"/><br/><sub>Twilio</sub></td>
-<td align="center" width="25%"><img src="https://cdn.simpleicons.org/sendgrid/51A9E3" width="56" height="56" alt="SendGrid"/><br/><sub>SendGrid</sub></td>
+<td align="center" width="25%"><img src="https://api.iconify.design/logos/twilio-icon.svg" width="56" height="56" alt="Twilio"/><br/><sub>Twilio</sub></td>
+<td align="center" width="25%"><img src="https://api.iconify.design/logos/sendgrid-icon.svg" width="56" height="56" alt="SendGrid"/><br/><sub>SendGrid</sub></td>
 <td width="25%"></td>
 <td width="25%"></td>
 </tr>
@@ -162,7 +162,7 @@ Full write-ups, stack notes, and repo links → [PROJECTS.md](./PROJECTS.md)
 
 ![Streak](./profile/streak.svg)
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=almondweisley&theme=react-dark&hide_border=true)
+![Activity Graph](./profile/activity-graph.svg)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile/snake-dark.svg" />
