@@ -1,0 +1,18 @@
+<svg width="300" height="130" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#3e64ff"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="299" height="129" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0" y="0" width="6" height="130" rx="3" fill="url(#edge)"/>
+  <text x="26" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">Azani ISP System</text>
+  <text x="26" y="56" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#8b949e">
+    <tspan x="26" dy="0">ISP billing, payments, site visits</tspan>
+    <tspan x="26" dy="16">and reports desktop app</tspan>
+  </text>
+  <text x="26" y="98" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#6e7681">Java Swing · MySQL</text>
+  <text x="26" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#6366f1">View repo &#8599;</text>
+</svg>
