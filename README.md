@@ -144,9 +144,19 @@ I build cross-platform apps end to end. Flutter and Dart on the front, Python or
 
 <table width="100%">
 <tr>
-<td width="33.33%"><a href="https://github.com/almondweisley/SAFARI-SALAMA"><img src="./profile/portal-safari.svg" width="100%" alt="SAFARI-SALAMA"/></a></td>
+<td width="33.33%"><a href="./PROJECTS.md#safari-salama"><img src="./profile/portal-safari.svg" width="100%" alt="SAFARI-SALAMA"/></a></td>
 <td width="33.33%"><a href="https://github.com/almondweisley/SignalGrid"><img src="./profile/portal-signalgrid.svg" width="100%" alt="SignalGrid"/></a></td>
-<td width="33.33%"><a href="https://github.com/almondweisley/Project_Castro"><img src="./profile/portal-castro.svg" width="100%" alt="Project Castro"/></a></td>
+<td width="33.33%"><a href="./PROJECTS.md#edumanage"><img src="./profile/portal-edumanage.svg" width="100%" alt="EduManage"/></a></td>
+</tr>
+<tr>
+<td width="33.33%"><a href="./PROJECTS.md#jifunze-breli"><img src="./profile/portal-jifunze.svg" width="100%" alt="Jifunze-Breli"/></a></td>
+<td width="33.33%"><a href="https://github.com/almondweisley/whetstone"><img src="./profile/portal-whetstone.svg" width="100%" alt="Whetstone"/></a></td>
+<td width="33.33%"><a href="https://github.com/almondweisley/Oloonkerin-"><img src="./profile/portal-oloonkerin.svg" width="100%" alt="Oloonkerin Management"/></a></td>
+</tr>
+<tr>
+<td width="33.33%"><a href="https://github.com/almondweisley/isp_azani"><img src="./profile/portal-azani.svg" width="100%" alt="Azani ISP System"/></a></td>
+<td width="33.33%"><a href="https://github.com/almondweisley/YelenImport"><img src="./profile/portal-yelenimport.svg" width="100%" alt="YelenImport"/></a></td>
+<td width="33.33%"><a href="https://github.com/almondweisley/almond-solutions"><img src="./profile/portal-almond.svg" width="100%" alt="Almond Solutions"/></a></td>
 </tr>
 </table>
 
