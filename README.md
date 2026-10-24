@@ -1,4 +1,5 @@
 <!-- Waving header banner -->
+<!-- Last reviewed: October 2026 -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Weisley%20Dan%20Ouma&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20Mobile%20Developer&descSize=18&descAlignY=78" width="100%" alt="Header"/>
 
 <!-- Animated typing headline -->
