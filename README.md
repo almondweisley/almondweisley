@@ -34,9 +34,9 @@
 
 I build cross-platform apps end to end. Flutter and Dart on the front, Python or Node on the back, Postgres underneath.
 
-- 🔭 Currently working on **YelenImport**
-- 🌱 Sharpening **FastAPI, SQLAlchemy**
-- 📫 Reach me at **weisleyalmond@outlook.com**
+- 🔭 Currently working on **YelenImport**, **Safari Salama** and **EduManage**
+- 🌱 Sharpening **FastAPI, SQLAlchemy**, **React-native**, **Django**
+- 📫 Reach me at **weisleyalmond@outlook.com**, **almondweisley@gmail.com**
 
 ## Open to Collaborate On
 
