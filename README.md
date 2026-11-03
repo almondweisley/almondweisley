@@ -34,9 +34,9 @@
 
 I build cross-platform apps end to end. Flutter and Dart on the front, Python or Node on the back, Postgres underneath.
 
-- 🔭 Currently working on **YelenImport**, **Safari Salama** and **EduManage**
-- 🌱 Sharpening **FastAPI, SQLAlchemy**, **React-native**, **Django**
-- 📫 Reach me at **weisleyalmond@outlook.com**, **almondweisley@gmail.com**
+-  Currently working on **YelenImport**, **Safari Salama** and **EduManage**
+-  Sharpening **FastAPI, SQLAlchemy**, **React-native**, **Django**
+-  Reach me at **weisleyalmond@outlook.com**, **almondweisley@gmail.com**
 
 ## Open to Collaborate On
 
@@ -47,7 +47,7 @@ I build cross-platform apps end to end. Flutter and Dart on the front, Python or
 
 <img src="./profile/divider.svg" width="100%" alt=""/>
 
-## 🌐 Connect with me
+## Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/weisley-dan)
 [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/solutionsalmond)
@@ -56,7 +56,7 @@ I build cross-platform apps end to end. Flutter and Dart on the front, Python or
 
 <img src="./profile/divider.svg" width="100%" alt=""/>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <table width="100%">
 <tr><td align="center" colspan="4"><b>Mobile</b></td></tr>
